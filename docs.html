@@ -1,0 +1,86 @@
+<!doctype html>
+<title>Documentation - SlickUI</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet", type="text/css", href="SlickUI.css">
+
+<html>
+    <h1 id= "title">Documentation - SlickUI</h1>
+    
+    <br>
+    <br>
+    
+    <div id= "links">
+        <a href= "home.html">Home</a>
+        <br>
+        <a href= "about.html">About</a>
+        <br>
+        <a href= "docs.html">Documentation</a>
+    </div>
+    
+    <br>
+    <br>
+    
+    <div id= "add-change-page">
+        <h3>Adding and Changing Pages in the Templete</h3>
+        <p>To create a new page, open up the <code>'SlickUI Website Templete'</code> directory.<br>
+        Next, create a new HTML file, for example, <code>'mypage.html'</code>.<br>
+        Open up your HTML file in a text editor.<br>
+        Link the <code>'SlickUI.css'</code> file in your page.<br>
+        Now that you have linked the SlickUI plugin, you are ready to start adding content to your page.</p>
+    </div>
+    
+    <br>
+    <br>
+    
+    <div id= "hacking-css-plugin">
+        <h3>Hacking the SlickUI Plugin</h3>
+        <p>If you want to, you can edit the <code>'SlickUI.css'</code> file to your liking.<br>
+        For example, if you wanted all headings to be blue, you could use the code below.</p>
+        <textarea spellcheck="false">
+            Original Code:
+            h1, h2, h3, h4, h5, h6 {
+                color: rgb(255, 100, 100);
+            }
+            
+            New Code:
+            h1, h2, h3, h4, h5, h6 {
+                color: rgb(100, 100, 255);
+            }
+        </textarea>
+    </div>
+    
+    <br>
+    <br>
+    
+    <div id= "using-js-plugins">
+        <h3>Implementing JavaScript Plugins to Your Page</h3>
+        <p>If you want to use JavaScript plugins or program your own, here's how:<br>
+        If you want to use an existing JavaScript plugin, for example jQuery, copy the file in the SlickUI directory.<br>
+        After you copied your file, for example, <code>'jquery-3.1.1.min.js'</code> link it to your page.<br>
+        Now, you can use functions from that library in your page.</p>
+        
+        <p>If you want to make your own JavaScript plugin or library, here's how:<br>
+        First, create a new JavaScript file in the SlickUI directory, for example, <code>'my-lib.js'</code>.<br>
+        Now, you can start adding code to your library or plugin, refer to the code below.</p>
+        
+        <textarea spellcheck="false">
+            JS Library Code:
+            function greetUser(username) {
+                alert("Welcome, " + username + "!");
+            }
+            
+            HTML Code:
+            <script src= "my-lib.js"></script>
+            <script>
+                greetUser("John");
+            </script>
+        </textarea>
+        
+        <p>As you can see here, we made a function called <code>'greetUser()'</code>, which took a parameter called <code>'username'</code>.<br>
+        In our HTML site, we linked the <code>'my-lib.js'</code> file, and used it to display a greeting.</p>
+    </div>
+</html>
+
+<script>
+</script>
